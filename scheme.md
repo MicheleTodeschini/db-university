@@ -20,46 +20,44 @@ Pensiamo a quali entità (tabelle) creare per il nostro database e cerchiamo poi
 - Students
 
 ## Departments
-
-- id
-- name
-- Address
-- Degree
+ 
+- id INT PK UNIQUE
+- name VARCHAR(100) NOTNULL
+- Address VARCHAR(255)
+- Degree VARCHAR(255)
 
 ## Degree
 
-- id
-- Course
-- Remote_or_onsite
-- Years_of_durations
-- which_building
+- id INT PK UNIQUE
+- Course VARCHAR(255)
+- Remote_or_onsite TINYINT (Considerandolo un booleano)
+- Years_of_durations TINYINT
+- which_building VARCHAR(255)
 
 ## Courses
 
-- id
-- number_of_students
-- is_open <!--Meaning if an entry test is needed-->
-- teacher_id
+- id INT PK UNIQUE
+- number_of_students TINYINT
+- is_open <!--Meaning if an entry test is needed--> TINYINT (Considerandolo un booleano)
+- teacher_id INT PK
 
 ## Teacher
 
-- id
-- Name
-- Lastname
-- Subject
+- id INT PK UNIQUE
+- Name VARCHAR(255)
+- Lastname VARCHAR(255)
+- Subject VARCHAR(150)
 
 ## Student
 
-- id
-- Name
-- Lastname
-- Department
-- Degree
-- Course
-- Immatricolation_year
+- id BIGINT PK UNIQUE
+- Name VARCHAR(255)
+- Lastname VARCHAR(255)
+- Degree VARCHAR(255)
+- Immatricolation_year YEAR
 
 ## Exam
 
-- id
-- Student_id
-- result
+- id INT PK UNIQUE
+- Student_id INT FK
+- result TINYINT
