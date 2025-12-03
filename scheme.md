@@ -40,4 +40,23 @@ Pensiamo a quali entità (tabelle) creare per il nostro database e cerchiamo poi
 - Latin_literature
 - Wine_and_territory
 
-## 
+## Teacher
+
+- id
+- Name
+- Lastname
+- Courses
+
+## Student
+
+- id
+- Name
+- Lastname
+- Department
+- Degree
+- Courses
+
+## Exam
+
+- Student_id
+- result
