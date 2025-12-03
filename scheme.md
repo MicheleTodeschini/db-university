@@ -21,31 +21,32 @@ Pensiamo a quali entità (tabelle) creare per il nostro database e cerchiamo poi
 
 ## Departments
 
-- Philosophy
-- Computer_Engeneering
-- Viticulture and Oenology
-- Humanistic_fields
+- id
+- name
+- Address
+- Degree
 
 ## Degree
 
-- Cyber_security
-- Enology
-- HR
-- Classic_literature
+- id
+- Course
+- Remote_or_onsite
+- Years_of_durations
+- which_building
 
 ## Courses
 
-- System_engeneering_1
-- Human_rights
-- Latin_literature
-- Wine_and_territory
+- id
+- number_of_students
+- is_open <!--Meaning if an entry test is needed-->
+- teacher_id
 
 ## Teacher
 
 - id
 - Name
 - Lastname
-- Courses
+- Subject
 
 ## Student
 
@@ -54,9 +55,11 @@ Pensiamo a quali entità (tabelle) creare per il nostro database e cerchiamo poi
 - Lastname
 - Department
 - Degree
-- Courses
+- Course
+- Immatricolation_year
 
 ## Exam
 
+- id
 - Student_id
 - result
