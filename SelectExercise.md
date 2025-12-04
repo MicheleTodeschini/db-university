@@ -13,6 +13,11 @@ FROM `149_db_university`.`courses`
 WHERE CFU > 10
 
 3. Selezionare tutti gli studenti che hanno più di 30 anni
+
+    SELECT `date_of_birth` FROM `149_db_university`.`students`
+WHERE date_of_birth > '1995-12-5' 
+
+
 4. Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di
 laurea (286)
 1. Selezionare tutti gli appelli d'esame che avvengono nel pomeriggio (dopo le 14) del
