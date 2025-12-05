@@ -54,3 +54,9 @@ FROM `149_db_university`.`departments`;
 FROM `149_db_university`.`teachers`
 WHERE phone IS NULL
 
+  SELECT COUNT(*)
+  FROM `teachers`
+  WHERE phone IS NULL
+
+
+
